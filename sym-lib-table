@@ -1,0 +1,5 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "ADM3483")(type "KiCad")(uri "${KIPRJMOD}/rs485/KiCADv6/2023-10-03_15-08-58.kicad_sym")(options "")(descr ""))
+  (lib (name "SX1261")(type "KiCad")(uri "${KIPRJMOD}/lora/KiCADv6/2023-10-09_18-18-10.kicad_sym")(options "")(descr ""))
+)

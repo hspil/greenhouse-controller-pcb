@@ -1,5 +1,11 @@
 (sym_lib_table
   (version 7)
   (lib (name "ADM3483")(type "KiCad")(uri "${KIPRJMOD}/rs485/KiCADv6/2023-10-03_15-08-58.kicad_sym")(options "")(descr ""))
-  (lib (name "SX1261")(type "KiCad")(uri "${KIPRJMOD}/lora/KiCADv6/2023-10-09_18-18-10.kicad_sym")(options "")(descr ""))
+  (lib (name "SX1262")(type "KiCad")(uri "${KIPRJMOD}/lora/2023-10-24_13-44-17.kicad_sym")(options "")(descr ""))
+  (lib (name "SS8050")(type "KiCad")(uri "${KIPRJMOD}/transistor/KiCADv6/2023-10-15_20-27-32.kicad_sym")(options "")(descr ""))
+  (lib (name "CP2102")(type "KiCad")(uri "${KIPRJMOD}/uart/2023-10-25_07-18-41.kicad_sym")(options "")(descr ""))
+  (lib (name "Relay")(type "KiCad")(uri "${KIPRJMOD}/relays/2023-10-17_14-33-24.kicad_sym")(options "")(descr ""))
+  (lib (name "TCXO")(type "Legacy")(uri "${KIPRJMOD}/tcxo/ECS-TXO-2520-33-320-AN-TR.lib")(options "")(descr ""))
+  (lib (name "rfswitch")(type "KiCad")(uri "${KIPRJMOD}/lora/rf_switch/2023-10-25_05-03-36.kicad_sym")(options "")(descr ""))
+  (lib (name "USB_conn")(type "KiCad")(uri "${KIPRJMOD}/uart/USB4105GFA.kicad_sym")(options "")(descr ""))
 )

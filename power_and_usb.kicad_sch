@@ -1173,9 +1173,6 @@
   (junction (at 132.08 41.91) (diameter 0) (color 0 0 0 0)
     (uuid d6ed8594-6dbd-45bc-a046-11596a2a1e0a)
   )
-  (junction (at 125.73 130.81) (diameter 0) (color 0 0 0 0)
-    (uuid e2395686-05ac-46e0-a0f0-4faf30fd1f2e)
-  )
   (junction (at 179.07 46.99) (diameter 0) (color 0 0 0 0)
     (uuid e61186bc-caeb-4567-9847-3fa55073e8d2)
   )
@@ -1234,7 +1231,7 @@
     (stroke (width 0) (type default))
     (uuid 2594fb43-bc78-4704-8a71-1569366bc1ab)
   )
-  (wire (pts (xy 125.73 130.81) (xy 151.13 130.81))
+  (wire (pts (xy 123.19 130.81) (xy 151.13 130.81))
     (stroke (width 0) (type default))
     (uuid 2caf2714-893b-4e69-a63d-4ea43bcb29a6)
   )
@@ -1326,10 +1323,6 @@
     (stroke (width 0) (type default))
     (uuid 77e833ce-3766-4913-a88f-d566b0ad3b53)
   )
-  (wire (pts (xy 125.73 139.7) (xy 125.73 142.24))
-    (stroke (width 0) (type default))
-    (uuid 781ad26a-de1d-497e-8108-23f35547be13)
-  )
   (wire (pts (xy 86.36 158.75) (xy 90.17 158.75))
     (stroke (width 0) (type default))
     (uuid 78330f16-fc59-4a04-b5d6-d47da64bc51c)
@@ -1414,10 +1407,6 @@
     (stroke (width 0) (type default))
     (uuid 9e065e2e-5030-4f0f-aa3f-271511bf1e2a)
   )
-  (wire (pts (xy 125.73 129.54) (xy 125.73 130.81))
-    (stroke (width 0) (type default))
-    (uuid a1ba1ff0-52bc-49dc-ae6b-5ba1c902c0c9)
-  )
   (wire (pts (xy 168.91 46.99) (xy 166.37 46.99))
     (stroke (width 0) (type default))
     (uuid a433c1f8-e9f3-4f91-ad21-ac137bd00937)
@@ -1429,10 +1418,6 @@
   (wire (pts (xy 231.14 111.76) (xy 231.14 113.03))
     (stroke (width 0) (type default))
     (uuid a801ad36-cbce-40eb-9aed-7a90ce75a271)
-  )
-  (wire (pts (xy 125.73 130.81) (xy 125.73 132.08))
-    (stroke (width 0) (type default))
-    (uuid a94abfbc-2f47-40c2-99fa-5db60f68d774)
   )
   (wire (pts (xy 166.37 48.26) (xy 166.37 46.99))
     (stroke (width 0) (type default))
@@ -1534,7 +1519,7 @@
     (stroke (width 0) (type default))
     (uuid e1cede38-446f-497f-a8b1-9a6b66e2c9e7)
   )
-  (wire (pts (xy 125.73 118.11) (xy 125.73 121.92))
+  (wire (pts (xy 123.19 121.92) (xy 123.19 130.81))
     (stroke (width 0) (type default))
     (uuid e543731f-2c5d-4264-b8c2-b9ff2527f6a7)
   )
@@ -1674,27 +1659,24 @@
     (uuid 2a7c259c-0c69-45c4-aa48-c48e1c7e3720)
   )
 
-  (symbol (lib_id "power:VBUS") (at 125.73 118.11 0) (unit 1)
+  (symbol (lib_id "power:VBUS") (at 123.19 121.92 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 0154ba8b-0fdf-4e30-aa37-438544ac1aa4)
-    (property "Reference" "#PWR?" (at 125.73 121.92 0)
+    (property "Reference" "#PWR059" (at 123.19 125.73 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Value" "VBUS" (at 125.73 113.03 0)
+    (property "Value" "VBUS" (at 123.19 116.84 0)
       (effects (font (size 1.27 1.27)))
     )
-    (property "Footprint" "" (at 125.73 118.11 0)
+    (property "Footprint" "" (at 123.19 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
-    (property "Datasheet" "" (at 125.73 118.11 0)
+    (property "Datasheet" "" (at 123.19 121.92 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (pin "1" (uuid 74bdfe3b-4d98-4e48-91e8-566ed3c4f951))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR059") (unit 1)
         )
@@ -1705,7 +1687,7 @@
   (symbol (lib_id "power:GNDREF") (at 189.23 157.48 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 040cb573-9f70-40d0-adf7-4ab4f35acd47)
-    (property "Reference" "#PWR?" (at 189.23 163.83 0)
+    (property "Reference" "#PWR071" (at 189.23 163.83 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 189.23 162.56 0)
@@ -1720,9 +1702,6 @@
     (pin "1" (uuid ed862c36-f735-4a7b-b81e-bab46c95c07d))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR071") (unit 1)
         )
@@ -1733,7 +1712,7 @@
   (symbol (lib_id "Device:R_US") (at 30.48 123.19 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 07bad8f2-eea9-4fe3-a682-b2d905928c9c)
-    (property "Reference" "R?" (at 25.4 121.92 0)
+    (property "Reference" "R11" (at 25.4 121.92 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "1MΩ" (at 24.13 124.46 0)
@@ -1749,9 +1728,6 @@
     (pin "2" (uuid e64aa140-5485-414d-9979-063393125f1f))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "R11") (unit 1)
         )
@@ -1762,7 +1738,7 @@
   (symbol (lib_id "power:GNDREF") (at 105.41 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 148cb928-8486-4d36-b185-e4fc3a1baf90)
-    (property "Reference" "#PWR?" (at 105.41 64.77 0)
+    (property "Reference" "#PWR057" (at 105.41 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 105.41 63.5 0)
@@ -1777,9 +1753,6 @@
     (pin "1" (uuid d708dd9a-e555-4b78-9306-df518bd60bbf))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR057") (unit 1)
         )
@@ -1816,7 +1789,7 @@
   (symbol (lib_id "power:GNDREF") (at 132.08 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 18508034-8ce0-4a61-b960-3eb32d6f6624)
-    (property "Reference" "#PWR?" (at 132.08 63.5 0)
+    (property "Reference" "#PWR062" (at 132.08 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 132.08 62.23 0)
@@ -1831,9 +1804,6 @@
     (pin "1" (uuid 23aec337-eb5f-426d-a04f-9789bb993656))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR062") (unit 1)
         )
@@ -1896,7 +1866,7 @@
   (symbol (lib_id "power:GNDREF") (at 179.07 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 1d2c8f59-a842-4441-97a2-baf82e810d31)
-    (property "Reference" "#PWR?" (at 179.07 63.5 0)
+    (property "Reference" "#PWR070" (at 179.07 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 179.07 62.23 0)
@@ -1911,9 +1881,6 @@
     (pin "1" (uuid a1c62e21-143b-41a8-8f83-34d4498c1958))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR070") (unit 1)
         )
@@ -1948,39 +1915,10 @@
     )
   )
 
-  (symbol (lib_id "Device:R_US") (at 125.73 135.89 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 36177660-baee-4fea-b809-103d7b056d33)
-    (property "Reference" "R?" (at 119.38 134.62 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "47.5kΩ" (at 116.84 137.16 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 126.746 136.144 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 125.73 135.89 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 51d5165d-a001-4566-afec-1468cafb60a9))
-    (pin "2" (uuid cdb89f2a-c1dc-4103-970e-f363534af005))
-    (instances
-      (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
-          (reference "R17") (unit 1)
-        )
-      )
-    )
-  )
-
   (symbol (lib_id "power:+3.3V") (at 138.43 133.35 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 398befe0-e830-494b-ab1a-45bc5e5abbfc)
-    (property "Reference" "#PWR?" (at 142.24 133.35 0)
+    (property "Reference" "#PWR065" (at 142.24 133.35 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 134.62 133.35 90)
@@ -1995,9 +1933,6 @@
     (pin "1" (uuid c4110f6d-0d78-4c70-9b86-3d99fab4e103))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR065") (unit 1)
         )
@@ -2008,7 +1943,7 @@
   (symbol (lib_id "Device:R_US") (at 143.51 138.43 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 3aae1483-55dd-4aee-829f-4c719a71e453)
-    (property "Reference" "R?" (at 143.51 140.97 90)
+    (property "Reference" "R19" (at 143.51 140.97 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2kΩ" (at 143.51 143.51 90)
@@ -2024,9 +1959,6 @@
     (pin "2" (uuid d252fcf9-a7a9-4cc5-a8b4-04e01255b658))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "R19") (unit 1)
         )
@@ -2037,7 +1969,7 @@
   (symbol (lib_id "power:+12V") (at 58.42 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 3eaf3b9a-a2d8-4434-b791-7f5258c27ecf)
-    (property "Reference" "#PWR?" (at 58.42 41.91 0)
+    (property "Reference" "#PWR049" (at 58.42 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 58.42 33.02 0)
@@ -2052,9 +1984,6 @@
     (pin "1" (uuid 8f3e9324-5be0-48af-b672-fcaae125914d))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR049") (unit 1)
         )
@@ -2116,7 +2045,7 @@
   (symbol (lib_id "Device:R_US") (at 69.85 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 43342e8a-8e04-4bb5-baf6-3c47f08b79fa)
-    (property "Reference" "R?" (at 72.39 86.36 0)
+    (property "Reference" "R14" (at 72.39 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5.11kΩ" (at 72.39 88.9 0)
@@ -2132,9 +2061,6 @@
     (pin "2" (uuid 37794eb1-8567-4c4e-bd1f-0ff11c8524c7))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "R14") (unit 1)
         )
@@ -2192,7 +2118,7 @@
   (symbol (lib_id "power:+3.3V") (at 231.14 101.6 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 4743b93d-34e6-4da8-8ef2-b1bce52c79bb)
-    (property "Reference" "#PWR?" (at 231.14 105.41 0)
+    (property "Reference" "#PWR072" (at 231.14 105.41 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 228.6 97.79 0)
@@ -2207,9 +2133,6 @@
     (pin "1" (uuid 3db76a51-b9c2-4b10-a0a3-13d38af59542))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR072") (unit 1)
         )
@@ -2269,7 +2192,7 @@
   (symbol (lib_id "power:GNDREF") (at 92.71 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 58346392-8bc2-4861-8b89-c44e8c89edbd)
-    (property "Reference" "#PWR?" (at 92.71 64.77 0)
+    (property "Reference" "#PWR054" (at 92.71 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 92.71 63.5 0)
@@ -2284,9 +2207,6 @@
     (pin "1" (uuid 2fbd793d-db3c-4da1-a8c5-73fd2c44bc40))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR054") (unit 1)
         )
@@ -2326,7 +2246,7 @@
   (symbol (lib_id "power:VBUS") (at 54.61 73.66 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 6120ea9e-29c3-4595-9210-0c7cbec6eb4c)
-    (property "Reference" "#PWR?" (at 54.61 77.47 0)
+    (property "Reference" "#PWR048" (at 54.61 77.47 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "VBUS" (at 54.61 68.58 0)
@@ -2341,9 +2261,6 @@
     (pin "1" (uuid 20ee3e9f-c35a-435e-8365-c5857c2198a6))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR048") (unit 1)
         )
@@ -2354,7 +2271,7 @@
   (symbol (lib_id "Device:R_US") (at 240.03 128.27 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 62cd2aa0-e1e5-4454-9822-f3e76aa0adce)
-    (property "Reference" "R?" (at 240.03 133.35 90)
+    (property "Reference" "R22" (at 240.03 133.35 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2kΩ" (at 240.03 130.81 90)
@@ -2370,9 +2287,6 @@
     (pin "2" (uuid f6d4cf8d-0919-4c7a-b96e-0ec8a8f3b4c7))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "R22") (unit 1)
         )
@@ -2410,7 +2324,7 @@
   (symbol (lib_id "power:GNDREF") (at 69.85 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 65254471-ae09-4cf7-8337-5e8784ac84fe)
-    (property "Reference" "#PWR?" (at 69.85 101.6 0)
+    (property "Reference" "#PWR051" (at 69.85 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 69.85 100.33 0)
@@ -2425,9 +2339,6 @@
     (pin "1" (uuid e93ced5b-9938-4087-9356-5ccd00dfbd71))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR051") (unit 1)
         )
@@ -2492,7 +2403,7 @@
   (symbol (lib_id "Device:R_US") (at 240.03 118.11 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 75caf3b4-a4c0-4e22-ad60-deda5efaf5af)
-    (property "Reference" "R?" (at 240.03 115.57 90)
+    (property "Reference" "R21" (at 240.03 115.57 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2kΩ" (at 240.03 113.03 90)
@@ -2508,9 +2419,6 @@
     (pin "2" (uuid 389b76b2-dede-48ed-bdee-1c60f44772e6))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "R21") (unit 1)
         )
@@ -2521,7 +2429,7 @@
   (symbol (lib_id "power:GNDREF") (at 81.28 95.25 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 82670f7e-30f2-4f2b-88e8-edc463898e62)
-    (property "Reference" "#PWR?" (at 81.28 101.6 0)
+    (property "Reference" "#PWR053" (at 81.28 101.6 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 81.28 100.33 0)
@@ -2536,9 +2444,6 @@
     (pin "1" (uuid 6e0ceb1c-88da-44a5-b130-7f4eba43e375))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR053") (unit 1)
         )
@@ -2549,7 +2454,7 @@
   (symbol (lib_id "Device:R_US") (at 143.51 133.35 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 84c20657-1c09-4472-ae52-6493e748121f)
-    (property "Reference" "R?" (at 143.51 130.81 90)
+    (property "Reference" "R18" (at 143.51 130.81 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2kΩ" (at 143.51 135.89 90)
@@ -2565,9 +2470,6 @@
     (pin "2" (uuid 23480862-3b2b-431e-9221-1dfd81dc5891))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "R18") (unit 1)
         )
@@ -2578,7 +2480,7 @@
   (symbol (lib_id "power:+12V") (at 43.18 38.1 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 878b4c4b-fb1a-43e2-a9f0-21df0133716b)
-    (property "Reference" "#PWR?" (at 43.18 41.91 0)
+    (property "Reference" "#PWR046" (at 43.18 41.91 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+12V" (at 43.18 33.02 0)
@@ -2593,9 +2495,6 @@
     (pin "1" (uuid 0a932378-cfb2-46b7-b501-1e92336a4ec2))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR046") (unit 1)
         )
@@ -2606,7 +2505,7 @@
   (symbol (lib_id "power:GNDREF") (at 43.18 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid 8a20069b-c216-46e0-8b7a-4f73ff9dcb16)
-    (property "Reference" "#PWR?" (at 43.18 64.77 0)
+    (property "Reference" "#PWR047" (at 43.18 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 43.18 63.5 0)
@@ -2621,9 +2520,6 @@
     (pin "1" (uuid c842c0a0-b14b-47b7-80bc-00fa035c4274))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR047") (unit 1)
         )
@@ -2634,7 +2530,7 @@
   (symbol (lib_id "power:+3.3V") (at 138.43 138.43 90) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid 8f1ac354-9aea-4345-9c7a-8c2557542769)
-    (property "Reference" "#PWR?" (at 142.24 138.43 0)
+    (property "Reference" "#PWR066" (at 142.24 138.43 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 134.62 138.43 90)
@@ -2649,40 +2545,8 @@
     (pin "1" (uuid a79556b3-838e-4708-847d-be93575670d2))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR066") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "Device:R_US") (at 125.73 125.73 180) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no)
-    (uuid 94be9bda-faa4-457e-85dd-35f2f2421538)
-    (property "Reference" "R?" (at 123.19 127 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Value" "22.1kΩ" (at 123.19 124.46 0)
-      (effects (font (size 1.27 1.27)) (justify left))
-    )
-    (property "Footprint" "Resistor_SMD:R_0805_2012Metric_Pad1.20x1.40mm_HandSolder" (at 124.714 125.476 90)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "~" (at 125.73 125.73 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 48b26431-2a67-4265-aec0-81ecbe044a4b))
-    (pin "2" (uuid 0cb29454-fd13-4ed1-be9d-dc42a9ba7355))
-    (instances
-      (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
-          (reference "R16") (unit 1)
         )
       )
     )
@@ -2716,7 +2580,7 @@
   (symbol (lib_id "Device:R_US") (at 81.28 87.63 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a0d053db-53cb-4229-ab18-97bb41724491)
-    (property "Reference" "R?" (at 83.82 86.36 0)
+    (property "Reference" "R15" (at 83.82 86.36 0)
       (effects (font (size 1.27 1.27)) (justify left))
     )
     (property "Value" "5.11kΩ" (at 83.82 88.9 0)
@@ -2732,9 +2596,6 @@
     (pin "2" (uuid 396e9310-99d5-414d-a687-281117be6468))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "R15") (unit 1)
         )
@@ -2745,7 +2606,7 @@
   (symbol (lib_id "power:GNDREF") (at 35.56 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid a5b616fa-b1bd-4ed1-95aa-cb8e96a42bd4)
-    (property "Reference" "#PWR?" (at 35.56 137.16 0)
+    (property "Reference" "#PWR045" (at 35.56 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 35.56 135.89 0)
@@ -2760,9 +2621,6 @@
     (pin "1" (uuid a2d9ab68-2e9b-43d9-8c58-67cf6fd2521e))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR045") (unit 1)
         )
@@ -2773,7 +2631,7 @@
   (symbol (lib_id "Device:R_US") (at 231.14 107.95 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid a6112728-0933-42f9-b007-f3ae4a9d5f82)
-    (property "Reference" "R?" (at 228.6 107.95 90)
+    (property "Reference" "R20" (at 228.6 107.95 90)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "2kΩ" (at 226.06 107.95 90)
@@ -2789,9 +2647,6 @@
     (pin "2" (uuid 039d8cb4-65fa-4ad8-9b4b-5c100a478dc2))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "R?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "R20") (unit 1)
         )
@@ -2879,7 +2734,7 @@
   (symbol (lib_id "power:GNDREF") (at 148.59 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid aed01a49-e2f8-45d7-880b-24d2f7528572)
-    (property "Reference" "#PWR?" (at 148.59 63.5 0)
+    (property "Reference" "#PWR067" (at 148.59 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 148.59 62.23 0)
@@ -2894,9 +2749,6 @@
     (pin "1" (uuid 7290a829-0d60-4cb8-9b15-e32cd7353763))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR067") (unit 1)
         )
@@ -2907,7 +2759,7 @@
   (symbol (lib_id "power:+3.3V") (at 245.11 128.27 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid aee08d59-f86b-4994-95fb-a3da76fb36a5)
-    (property "Reference" "#PWR?" (at 241.3 128.27 0)
+    (property "Reference" "#PWR074" (at 241.3 128.27 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 248.92 128.27 90)
@@ -2922,36 +2774,8 @@
     (pin "1" (uuid 920180d8-24a3-4606-ad25-246bcb5ab153))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR074") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:+5V") (at 132.08 36.83 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid b6171019-2540-4ca8-96d5-9d0c63b77256)
-    (property "Reference" "#PWR061" (at 132.08 40.64 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "+5V" (at 132.08 31.75 0)
-      (effects (font (size 1.27 1.27)))
-    )
-    (property "Footprint" "" (at 132.08 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 132.08 36.83 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid d1c37943-05a3-4f3b-93b6-b9d993d85abf))
-    (instances
-      (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
-          (reference "#PWR061") (unit 1)
         )
       )
     )
@@ -2960,7 +2784,7 @@
   (symbol (lib_id "power:GNDREF") (at 30.48 130.81 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid bb8ac3dc-c37e-4ecd-a0f2-4927c0eb2de8)
-    (property "Reference" "#PWR?" (at 30.48 137.16 0)
+    (property "Reference" "#PWR044" (at 30.48 137.16 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 30.48 135.89 0)
@@ -2975,9 +2799,6 @@
     (pin "1" (uuid ace7d3b2-8290-46fc-97e7-38e586a4c645))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR044") (unit 1)
         )
@@ -3006,34 +2827,6 @@
       (project "greenhouse-controller-pcb"
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "D1") (unit 1)
-        )
-      )
-    )
-  )
-
-  (symbol (lib_id "power:GNDREF") (at 125.73 142.24 0) (unit 1)
-    (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
-    (uuid c7acf3c0-3d70-46e4-80d8-7ca15467735d)
-    (property "Reference" "#PWR?" (at 125.73 148.59 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Value" "GNDREF" (at 125.73 147.32 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Footprint" "" (at 125.73 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (property "Datasheet" "" (at 125.73 142.24 0)
-      (effects (font (size 1.27 1.27)) hide)
-    )
-    (pin "1" (uuid 35108615-61b9-450a-9098-134f4457d580))
-    (instances
-      (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
-          (reference "#PWR060") (unit 1)
         )
       )
     )
@@ -3068,7 +2861,7 @@
   (symbol (lib_id "power:+3.3V") (at 245.11 118.11 270) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid db6093bc-fd43-4eda-a33b-a71c6993972a)
-    (property "Reference" "#PWR?" (at 241.3 118.11 0)
+    (property "Reference" "#PWR073" (at 241.3 118.11 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "+3.3V" (at 248.92 118.11 90)
@@ -3083,9 +2876,6 @@
     (pin "1" (uuid aa9c6bba-bcee-4c98-8a88-b2bef5214b73))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR073") (unit 1)
         )
@@ -3148,7 +2938,7 @@
   (symbol (lib_id "Connector:Screw_Terminal_01x02") (at 38.1 46.99 0) (mirror y) (unit 1)
     (in_bom yes) (on_board yes) (dnp no)
     (uuid e5e483f9-38e2-41bd-9daa-0eca72fae1ec)
-    (property "Reference" "J?" (at 38.1 53.34 0)
+    (property "Reference" "J6" (at 38.1 53.34 0)
       (effects (font (size 1.27 1.27)))
     )
     (property "Value" "POWER IN" (at 30.48 48.26 0)
@@ -3164,9 +2954,6 @@
     (pin "2" (uuid 1eb9d90d-52df-45f9-897b-c5e9ecb51b53))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "J?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "J6") (unit 1)
         )
@@ -3177,7 +2964,7 @@
   (symbol (lib_id "power:GNDREF") (at 166.37 57.15 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid e7051ae3-5c34-4b64-b6f4-1948a75cf42a)
-    (property "Reference" "#PWR?" (at 166.37 63.5 0)
+    (property "Reference" "#PWR068" (at 166.37 63.5 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 166.37 62.23 0)
@@ -3192,9 +2979,6 @@
     (pin "1" (uuid f98a0758-35c4-4840-b01d-8a1511695269))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR068") (unit 1)
         )
@@ -3205,7 +2989,7 @@
   (symbol (lib_id "power:GNDREF") (at 58.42 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid ed058aea-2394-4ecd-8968-452a6ab51468)
-    (property "Reference" "#PWR?" (at 58.42 64.77 0)
+    (property "Reference" "#PWR050" (at 58.42 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 58.42 63.5 0)
@@ -3220,9 +3004,6 @@
     (pin "1" (uuid 438224d2-77ad-4fd6-adee-8681f7d2ff25))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR050") (unit 1)
         )
@@ -3233,7 +3014,7 @@
   (symbol (lib_id "power:GNDREF") (at 74.93 58.42 0) (unit 1)
     (in_bom yes) (on_board yes) (dnp no) (fields_autoplaced)
     (uuid f2984d88-8908-4898-9abe-ede8e2786464)
-    (property "Reference" "#PWR?" (at 74.93 64.77 0)
+    (property "Reference" "#PWR052" (at 74.93 64.77 0)
       (effects (font (size 1.27 1.27)) hide)
     )
     (property "Value" "GNDREF" (at 74.93 63.5 0)
@@ -3248,9 +3029,6 @@
     (pin "1" (uuid cd6763b9-45ea-4890-9fb7-a3859d5e2106))
     (instances
       (project "greenhouse-controller-pcb"
-        (path "/9d9f565b-05ec-4279-8a72-1d7b81507274"
-          (reference "#PWR?") (unit 1)
-        )
         (path "/9d9f565b-05ec-4279-8a72-1d7b81507274/d93e2f54-f78b-465c-b021-1a75967f8d63"
           (reference "#PWR052") (unit 1)
         )
